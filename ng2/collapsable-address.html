@@ -1,0 +1,14 @@
+<div>
+  <div [hidden]='!isCollapsed' 
+      (click)="collapseAddress()">
+    <h4>Address:</h4>
+    {{address.street}} <br />
+    {{address.city}}<br />
+    {{address.state}}
+  </div>
+  <div [hidden]='isCollapsed' 
+      (click)="expandAddress()">
+    <h4>Address:</h4>
+    {{address.state}}...
+  </div>
+</div>
