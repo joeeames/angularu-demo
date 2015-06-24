@@ -3,9 +3,7 @@ angular.module('app').directive(
   function() {
   return {
     retstrict: 'E',
-    scope: {
-      address: '='
-    },
+    scope: {address: '='},
     templateUrl: 'collapsable-address.html',
     controller: function($scope) {
       $scope.isCollapsed = false;
